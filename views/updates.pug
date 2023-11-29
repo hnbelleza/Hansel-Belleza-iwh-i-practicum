@@ -1,0 +1,22 @@
+doctype html
+html 
+    head 
+        title= `${title}`
+        meta(name="viewport" content="width=device-width, initial-scale=1")
+        link(rel="stylesheet", href="/css/style.css")
+    body    
+        h1 Add a New Clue!
+        h3
+            a(class={active: currentUrl === '/'} href='/') Return to the homepage
+
+        form(action="/update", method="POST")
+            label(for="name") Name:
+            input(type="text", id="name", name="name", placeholder="Enter washer name", required)
+            
+            label(for="age") Location of Clue:
+            input(type="int", id="age", name="age", placeholder="Age", required)
+
+            label(for="years_of_experience") Clue Description:
+            input(type="int", id="years_of_experience", name="years_of_experience", placeholder="Years of Experience", required)
+
+            button(type="submit") Submit
