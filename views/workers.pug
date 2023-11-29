@@ -7,17 +7,17 @@ html
         meta(name="viewport" content="width=device-width, initial-scale=1")
         link(rel="stylesheet", href="/css/style.css")
     body    
-        h1 Only Murders In the Building Clues
+        h1 Carwash Washers
         h3
             a(class={active: currentUrl === '/updates'} href='/updates') Add/Update this table
         table
             thead
                 tr
-                    th Washer Name
-                    th Washer Age
-                    th Washer Experience
+                    th Name
+                    th Age
+                    th Experience
             tbody
-                each clue in data
+                each washer in data
                     tr
                         td= washer.properties.name
                         td= washer.properties.age
