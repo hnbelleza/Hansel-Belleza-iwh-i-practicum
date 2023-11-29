@@ -51,7 +51,7 @@ app.get('/updates', async (req, res) => {
 
 // * Code for Route 3 goes here
 
-/**
+
 app.post('/update', async (req, res) => {
     const update = {
         properties: {
@@ -61,14 +61,14 @@ app.post('/update', async (req, res) => {
         }
     }
 
-    const updateClue = `https://api.hubapi.com/crm/v3/objects/${cobjID}/`; 
+    const updateWasher = `https://api.hubapi.com/crm/v3/objects/${cobjID}/`; 
     const headers = {
         Authorization: `Bearer ${PRIVATE_APP_ACCESS}`,
         'Content-Type': 'application/json'
     };
 
     try { 
-        await axios.post(updateClue, update, { headers } );
+        await axios.post(updateWasher, update, { headers } );
         res.redirect('/');
     } catch(err) {
         console.error(err);
@@ -76,7 +76,7 @@ app.post('/update', async (req, res) => {
     }
 
 });
-**/
+
 
 
 app.listen(3000, () => console.log('Listening on http://localhost:3000'));
