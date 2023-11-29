@@ -9,13 +9,13 @@ html
     body    
         h1 Carwash Washers
         h3
-            a(class={active: currentUrl === '/updates'} href='/updates') Add/Update this table
+            a(class={active: currentUrl === '/updates'} href='/updates') Add / Update this table
         table
             thead
                 tr
                     th Name
                     th Age
-                    th Experience
+                    th Experience (Years)
             tbody
                 each washer in data
                     tr
